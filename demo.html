@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo<title/>
+<link href="calendar_page.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="calendar_page.js" charset="UTF-8"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js" charset="UTF-8"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	showC();
+});
+function showC() {
+  var param = {};
+  param['containerid'] = 'containerid'//页面容器
+  param['fromdate'] = new Date(2017-01-01);//有效日期开始
+  param['todate'] = new Date(2017-12-31);;//有效日期结束
+  var handler = {//点击单元格执行事件
+           'lastmonth':function() {
+                //fun('lastmonth');
+            },
+            'nextmonth':function() {
+                //fun('nextmonth');
+            }
+   }
+   param['unit_content']=[
+    {'date':'20170501','title':'今天是20170501','text':'文本显示','clickable':true,'price':5000}]
+   var _book = function(departdate) {
+       //alert(departdate);
+   }
+   
+   //foreach 要显示多少日期触发多少日期事件就在这里循环
+   handler['F20170501'] = function() {
+        _book('20170501');
+   }
+   showCalendar(param,handler);
+}
+</script>
+</head>
+<body>
+<div id="containerid"></div>
+</body>
+</html>
