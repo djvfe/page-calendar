@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*div容器*/
+.calendar_innercontainer {background:#fff;padding:0px;margin:0px;height:365px;width:565px;}
+/*包含左侧按钮视图和月份表格的table*/
+#calendar_table{height:360px;}
+
+/*左侧视图*/
+#calendar_left_table {
+	width:90px;
+	height:365px;
+	font-size:14px;
+}
+#calendar_left_table th{background:#fff;}
+/*月份视图*/
+
+.calendar_right_table {
+	width:475px;
+	height:365px;
+	font-size:14px;margin:0px;padding:0px;border-collapse:collapse;
+}
+/*月份视图表头*/
+.calendar_right_table th {
+	color:#999;width:60px; text-align:left;padding-left:5px;
+	height: 30px;border-style:solid;border-width:1px;border-color:#dedede;font-size:12px;
+}
+.calendar_right_table td{
+	width:60px;height:45px;border-style:solid;border-width:1px;border-color:#dedede; text-align:left;padding-left:5px;padding-top:2px;font-size:11px;line-height:16px;
+}
+
+/*左侧表头（空白内容）*/
+.calendar_left_th {
+
+}
+/*上月按钮单元格可用状态*/
+.calendar_lastmonth {
+	cursor:pointer;border-style:solid;border-width:1px; border-right-width:0; border-color:#dedede;text-align: center;
+	font-size: 24px;height:120px;color:#9fd0a6;
+}
+
+/*上月按钮单元格不可用状态*/
+.calendar_lastmonth_disabled {
+	cursor:block;
+	background-color: #fff;
+	text-align: center;
+	border-style:solid;border-width:1px; border-right-width:0;border-color:#dedede;
+	font-size: 24px;height:120px;color:#f9f9f9;
+}
+/*日期显示单元格-左侧年月*/
+.calendar_viewdate {
+	background-color: #fff;
+	text-align: center;
+	border-style:solid;border-width:0; border-left-width:1px;border-color:#dedede;
+}
+/*下月按钮单元格可用状态*/
+.calendar_nextmonth {
+	cursor:pointer;border-style:solid;border-width:1px;border-right-width:0;border-color:#dedede;text-align: center;
+	font-size: 24px;height:120px;color:#9fd0a6;
+	/*cursor:pointer;width:65px;*/
+}
+/*下月按钮单元格不可用状态*/
+.calendar_nextmonth_disabled {
+	cursor:block;
+	background-color: #fff;
+	text-align: center;
+	border-style:solid;border-width:1px; border-right-width:0;border-color:#dedede;
+	font-size: 24px;height:120px;color:#f9f9f9;
+	/*cursor:block;
+	background-color: #fff;width:65px;*/
+}
+
+
+/*周日单元格*/
+.calendar_sun_td {
+	cursor:pointer;width:65px;
+	background-color: #fdfdfd;border-style:solid;border-width:1px;border-color:#dedede;font-weight:bold;height: 30px;
+}
+.calendar_sun_td font { display:block; font-size: 12px;font-family: arial,verdana;padding:0; margin:0; font-weight: normal; height: 15px; }
+.calendar_sun_td font.price { color:#FF7A17;}
+/*无效周日单元格*/
+.calendar_sun_td_disabled {
+	cursor:block;width:65px;
+	border-style:solid;border-width:1px;border-color:#dedede;height: 50px;
+}
+/*周六单元格*/
+.calendar_sat_td {
+	cursor:pointer;width:65px;
+	background-color: #fdfdfd;border-style:solid;border-width:1px;border-color:#dedede;font-weight:bold;height: 50px;
+}
+.calendar_sat_td font { display:block; font-size: 12px;font-family: arial,verdana;padding:0; margin:0; font-weight: normal; height: 15px; }
+.calendar_sat_td font.price { color:#FF7A17;}
+/*无效周六单元格*/
+.calendar_sat_td_disabled {
+	cursor:block;width:65px;
+	border-style:solid;border-width:1px;border-color:#dedede;height: 50px;
+}
+/*工作日单元格*/
+.calendar_workday_td {
+	cursor:pointer;width:65px;
+	background-color: #fdfdfd;border-style:solid;border-width:1px;border-color:#dedede;font-weight:bold;height:50px;color:#000;
+}
+.calendar_workday_td font { display:block; font-size: 12px;font-family: arial,verdana;padding:0; margin:0; font-weight: normal; height: 15px; }
+.calendar_workday_td font.price { color:#FF7A17;}
+/*无效工作日单元格*/
+.calendar_workday_td_disabled {
+	cursor:block;width:65px;
+	background-color: #fff;border-style:solid;border-width:1px;border-color:#dedede;height: 50px;
+}
